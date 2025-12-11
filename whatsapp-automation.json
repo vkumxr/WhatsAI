@@ -1,0 +1,59 @@
+{
+  "name": "Whatsapp Automation",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -208,
+        -32
+      ],
+      "id": "6462aef4-a108-4cd2-9205-9049721a45fa",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "operation": "send",
+        "phoneNumberId": "939499825904482",
+        "recipientPhoneNumber": "+919342236718",
+        "textBody": "Im currently an Automated chatbot",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.whatsApp",
+      "typeVersion": 1.1,
+      "position": [
+        80,
+        -32
+      ],
+      "id": "b9988d25-65f3-4617-abf2-2dba5dcf279c",
+      "name": "Send message",
+      "webhookId": "10ad600b-929b-4258-bc5d-54232c8b0700"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Send message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "06bed734-4ec6-469c-8bf5-58e84f1db274",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "d19a2be6477e3c822000490340d1678a0693032d6dd58f760a547de3c64cd73f"
+  },
+  "id": "fs1mQpjsXjbkRXMP",
+  "tags": []
+}

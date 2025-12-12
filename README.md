@@ -4,5 +4,3 @@ with LLMs like GPT, Gemini, and LLaMA.
 
 Includes example workflows, setup guides, and integration notes for creating your own WhatsApp AI assistant.
 Ideal for automation engineers, developers, and anyone building WhatsApp-based AI bots.
-
-l
